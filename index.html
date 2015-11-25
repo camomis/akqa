@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>Library</title>
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/help-bubble.css">
+  <link rel="stylesheet" href="stylesheets/custom-popup-box.css">
+  <link rel="stylesheet" href="stylesheets/onboarding.css">
+  <link rel="stylesheet" href="stylesheets/cornered-button.css">
+  <link rel="stylesheet" href="stylesheets/fonts.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+<script src="javascripts/modernizr.foundation.js"></script>
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+.table {
+  width: 100%;
+  border: 1px solid red;
+}
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 1.125em;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+.bubble {
+  display: block;
+  position: relative;
+}
+</style>
+</head>
+
+<body class="redesign1">
+  <div class="obp-background">
+    <div class="obp-image-container"><img src="../images/obp-background.jpg" class="obp-image" title="Yapital" alt="Yapital" /></div>
+    <div class="row" id="outer">
+      <header class="text-center mtl"><a href="#"><img src="images/logo.png" width="183" height="46" title="Yapital" alt="Yapital" /></a></header>
+      <h3 class="mlm">Library</h3>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Example</th>
+            <th>Markup</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Logo</td>
+            <td><a href="#"><img src="images/logo.png" width="183" height="46" title="Yapital" alt="Yapital" /></a></td>
+            <td><code>&lt;a href="#"&gt;&lt;img src="images/logo.png" width="183" height="46" title="Yapital" alt="Yapital" /&gt;&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 1</td>
+            <td><h1 class="h1">Heading level 1</h1></td>
+            <td><code>&lt;h1 class="h1"&gt;Heading level 1&lt;/h1&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 2</td>
+            <td><h2 class="h2">Heading level 2</h2></td>
+            <td><code>&lt;h2 class="h2"&gt;Heading level 2&lt;/h2&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 3</td>
+            <td><h3 class="h3">Heading level 3</h3></td>
+            <td><code>&lt;h3 class="h3"&gt;Heading level 3&lt;/h3&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 4</td>
+            <td><h4 class="h4">Heading level 4</h4></td>
+            <td><code>&lt;h4 class="h4"&gt;Heading level 4&lt;/h4&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 5</td>
+            <td><h5 class="h5">Heading level 5</h5></td>
+            <td><code>&lt;h5 class="h5"&gt;Heading level 5&lt;/h5&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Heading level 6</td>
+            <td><h6 class="h6">Heading level 6</h6></td>
+            <td><code>&lt;h6 class="h6"&gt;Heading level 6&lt;/h6&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="text_lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="text_lg"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="info-heading">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="info-heading"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="info-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="info-text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="uppercase">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="uppercase"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="small-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="small-text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p class="error-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.2</p></td>
+            <td><code>&lt;p class="error-text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Sub Navigation Menu</td>
+            <td>
+              <ul class="menu">
+                <li><a href="#">PROFILE</a> <span class="separator">|</span></li>
+                <li><a href="#" class="active">SECURITY</a> <span class="separator">|</span></li>
+                <li><a href="#">DEVICES</a> <span class="separator">|</span></li>       
+                <li><a href="#">DOCUMENTS</a></li>
+              </ul>
+            </td>
+            <td>
+              <code>&lt;ul class="menu"&gt;&lt;li&gt;&lt;a href="#"&gt;PROFILE&lt;/a&gt; &lt;span class="separator"&gt;|&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#" class="active"&gt;SECURITY&lt;/a&gt; &lt;span class="separator"&gt;|&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#">DEVICES&lt;/a&gt; &lt;span class="separator"&gt;|&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;DOCUMENTS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Cornered Button</td>
+            <td>
+              <div class="cornered-button">
+                <div class="cornered-top">&nbsp;</div>
+                <button class="cornered-middle" type="submit">Sign up!</button>
+                <div class="cornered-bottom">&nbsp;</div>
+              </div>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Cornered Button Active</td>
+            <td>
+              <div class="cornered-button b-active">
+                <div class="cornered-top">&nbsp;</div>
+                <a href="#" class="cornered-middle">Sign up!</a>
+                <div class="cornered-bottom">&nbsp;</div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Cornered Button Cancel</td>
+            <td>
+              <div class="cornered-button b-cancel">
+                <div class="cornered-top">&nbsp;</div>
+                <a href="#" class="cornered-middle">Cancel</a>
+                <div class="cornered-bottom">&nbsp;</div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Next Button</td>
+            <td><a href="#" class="button-action arrow_right_icon">NEXT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon"&gt;NEXT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Next Button standard</td>
+            <td><a href="#" class="button-action arrow_right_icon standard">NEXT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon standard"&gt;NEXT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Next Button disabled</td>
+            <td><a href="#" class="button-action arrow_right_icon disabled">NEXT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon disabled"&gt;NEXT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Export Button</td>
+            <td><a href="#" class="button-action arrow_right_icon">EXPORT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon"&gt;EXPORT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Export Button standard</td>
+            <td><a href="#" class="button-action arrow_right_icon standard">EXPORT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon standard"&gt;EXPORT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Export Button disabled</td>
+            <td><a href="#" class="button-action arrow_right_icon disabled">EXPORT</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon disabled"&gt;EXPORT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Continue Button</td>
+            <td><a href="#" class="button-action arrow_right_icon">CONTINUE</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_right_icon"&gt;CONTINUE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Back Button</td>
+            <td><a href="#" class="button-action arrow_left_icon">BACK</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_left_icon"&gt;BACK&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Back Button standard</td>
+            <td><a href="#" class="button-action arrow_left_icon standard">BACK</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_left_icon standard"&gt;BACK&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Back Button disabled</td>
+            <td><a href="#" class="button-action arrow_left_icon disabled">BACK</a></td>
+            <td><code>&lt;a href="#" class="button-action arrow_left_icon disabled"&gt;BACK&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Connect Button</td>
+            <td><a href="#" class="button-action connect_icon">CONNECT</a></td>
+            <td><code>&lt;a href="#" class="button-action connect_icon"&gt;CONNECT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Connect Button standard</td>
+            <td><a href="#" class="button-action connect_icon standard">CONNECT</a></td>
+            <td><code>&lt;a href="#" class="button-action connect_icon standard"&gt;CONNECT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Connect Button disabled</td>
+            <td><a href="#" class="button-action connect_icon disabled">CONNECT</a></td>
+            <td><code>&lt;a href="#" class="button-action connect_icon disabled"&gt;CONNECT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Cancel Button</td>
+            <td><a href="#" class="button-action cancel_icon">CANCEL</a></td>
+            <td><code>&lt;a href="#" class="button-action cancel_icon"&gt;CANCEL&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Cancel Button inverse</td>
+            <td><a href="#" class="button-action cancel_icon inverse">CANCEL</a></td>
+            <td><code>&lt;a href="#" class="button-action cancel_icon inverse"&gt;CANCEL&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Close Button</td>
+            <td><a href="#" class="button-action cancel_icon inverse">CLOSE</a></td>
+            <td><code>&lt;a href="#" class="button-action cancel_icon inverse"&gt;CLOSE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>No Button</td>
+            <td><a href="#" class="button-action cancel_icon inverse">NO</a></td>
+            <td><code>&lt;a href="#" class="button-action cancel_icon inverse"&gt;NO&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Edit Button</td>
+            <td><a href="#" class="button-action edit_icon">EDIT</a></td>
+            <td><code>&lt;a href="#" class="button-action edit_icon"&gt;EDIT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Edit Button standard</td>
+            <td><a href="#" class="button-action edit_icon standard">EDIT</a></td>
+            <td><code>&lt;a href="#" class="button-action edit_icon standard"&gt;EDIT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Save Button</td>
+            <td><a href="#" class="button-action mark_icon">SAVE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;SAVE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Save Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">SAVE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;SAVE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Ok Button</td>
+            <td><a href="#" class="button-action mark_icon">OK</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;OK&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Ok Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">OK</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;OK&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Try Again Button</td>
+            <td><a href="#" class="button-action mark_icon">TRY AGAIN</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;TRY AGAIN&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Try Again Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">TRY AGAIN</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;TRY AGAIN&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Cheque Button</td>
+            <td><a href="#" class="button-action mark_icon">CHEQUE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;CHEQUE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Cheque Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">CHEQUE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;CHEQUE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Reset Password Button</td>
+            <td><a href="#" class="button-action mark_icon">RESET PASSWORD</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;RESET PASSWORD&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Reset Password Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">RESET PASSWORD</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;RESET PASSWORD&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Add Button</td>
+            <td><a href="#" class="button-action mark_icon">ADD</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;ADD&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Add Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">ADD</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;ADD&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Forfeit Button</td>
+            <td><a href="#" class="button-action mark_icon">FORFEIT</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;FORFEIT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Forfeit Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">FORFEIT</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;FORFEIT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Confirm Button</td>
+            <td><a href="#" class="button-action mark_icon">CONFIRM</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;CONFIRM&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Confirm Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">CONFIRM</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;CONFIRM&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Activate Button</td>
+            <td><a href="#" class="button-action mark_icon">ACTIVATE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;ACTIVATE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Activate Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">ACTIVATE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;ACTIVATE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Withdraw Button</td>
+            <td><a href="#" class="button-action mark_icon">WITHDRAW</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;WITHDRAW&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Withdraw Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">WITHDRAW</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;WITHDRAW&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Fund Button</td>
+            <td><a href="#" class="button-action mark_icon">FUND</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;FUND&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Fund Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">FUND</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;FUND&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Password Forgotten Button</td>
+            <td><a href="#" class="button-action mark_icon">PASSWORD FORGOTTEN</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;PASSWORD FORGOTTEN&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Password Forgotten Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">PASSWORD FORGOTTEN</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;PASSWORD FORGOTTEN&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Delete Button</td>
+            <td><a href="#" class="button-action mark_icon">DELETE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;DELETE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Delete Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">DELETE</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;DELETE&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Yes Button</td>
+            <td><a href="#" class="button-action mark_icon">YES</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;YES&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Send Button</td>
+            <td><a href="#" class="button-action mark_icon">SEND</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;SEND&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Send Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">SEND</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;SEND&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Accept Button</td>
+            <td><a href="#" class="button-action mark_icon">ACCEPT</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;ACCEPT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Accept Button standard</td>
+            <td><a href="#" class="button-action mark_icon standard">ACCEPT</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon standard"&gt;ACCEPT&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Log in Button</td>
+            <td><a href="#" class="button-action mark_icon">LOG IN</a></td>
+            <td><code>&lt;a href="#" class="button-action mark_icon"&gt;LOG IN&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Add Button type button</td>
+            <td><button class="button-action mark_icon">ADD</button></td>
+            <td><code>&lt;button class="button-action mark_icon"&gt;ADD&lt;/button&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Add Button type div</td>
+            <td><div class="button-action mark_icon">ADD</div></td>
+            <td><code>&lt;div class="button-action mark_icon"&gt;ADD&lt;/div&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Search Button</td>
+            <td><button class="tiny alert button">SEARCH</button></td>
+            <td><code>&lt;button class="tiny alert button"&gt;SEARCH&lt;/button&gt;</code></td> 
+          </tr>
+          <tr>
+            <td>Standard Link</td>
+            <td><a href="#">Link</a></td>
+            <td><code>&lt;a href="#"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="h4 link">Link</a></td>
+            <td><code>&lt;a href="#" class="h4 link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="link">Link</a></td>
+            <td><code>&lt;a href="#" class="link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="support-link">Link</a></td>
+            <td><code>&lt;a href="#" class="support-link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="action-link">Link</a></td>
+            <td><code>&lt;a href="#" class="action-link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="info-link">Link</a></td>
+            <td><code>&lt;a href="#" class="info-link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><a href="#" class="faq-link">Link</a></td>
+            <td><code>&lt;a href="#" class="faq-link"&gt;Link&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Information message</td>
+            <td>
+              <div class="row text">
+                <div class="left"><span class="notification information">&nbsp;</span></div>
+                <div class="left seven">YOU DON'T HAVE ANY FUNDING SOURCE ADDED TO YOUR WALLET. IN ORDER TO FULLY USE FUND YOU NEED TO ADD A NEW FUNDING SOURCE TO YOUR WALLET. CLICK ON THE "ADD" BELOW TO ADD NEW FUNDING SOURCE.</div>
+              </div>
+            </td>
+            <td><code>&lt;div class="row text"&gt;
+              &lt;div class="left"&gt;&lt;span class="notification information"&gt;&nbsp;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="left seven"&gt;YOU DON'T HAVE ANY FUNDING SOURCE ADDED TO YOUR WALLET. IN ORDER TO FULLY USE FUND YOU NEED TO ADD A NEW FUNDING SOURCE TO YOUR WALLET. CLICK ON THE "ADD" BELOW TO ADD NEW FUNDING SOURCE.&lt;/div&gt;
+              &lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Error Message</td>
+              <td>
+                <div class="msg-alert message-error">SORRY, YOUR MONEY WAS NOT SENT</div>
+              </td>
+              <td><code>&lt;div class="msg-alert message-error"&gt;SORRY, YOUR MONEY WAS NOT SENT&lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Warning Message</td>
+              <td>
+                <div class="msg-alert message-error message-warning">SORRY, YOUR MONEY WAS NOT SENT</div>
+              </td>
+              <td><code>&lt;div class="msg-alert message-warning"&gt;SORRY, YOUR MONEY WAS NOT SENT&lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Success Message</td>
+              <td>
+                <div class="msg-alert message-success">YOUR MONEY WAS SENT</div>
+              </td>
+              <td>
+                <code>&lt;div class="msg-alert message-success"&gt;YOUR MONEY WAS SENT&lt;/div&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>Help Section</td>
+              <td>
+                <div class="help-section">HELP</div>
+              </td>
+              <td><code>&lt;div class="help-section"&gt;HELP&lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Bank Account</td>
+              <td><h4 class="bank account">BANK ACCOUNT</h4></td>
+              <td><code>&lt;div class="bank account"&gt;BANK ACCOUNT&lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Visa</td>
+              <td><h4 class="account visa">MEINE VISA</h4></td>
+              <td><code>&lt;h4 class="account visa"&gt;MEINE VISA&lt;/h4&gt;</code></td>
+            </tr>
+            <tr>
+              <td>Footer Text</td>
+              <td>
+                <ul class="link-list footer">
+                  <li><a href="#">Imprint</a></li>
+                  <li><a href="#">Legal Notice</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                </ul>
+              </td>
+              <td><code>&lt;ul class="link-list footer"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Imprint&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Legal Notice&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Terms of Use&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Press&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Newsletter&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              </code></td>
+            </tr>
+            <tr>
+              <td>Information List</td>
+              <td>
+                <ul class="link-list info-menu">
+                  <li><a href="#">WHAT’S YAPTITAL</a></li>
+                  <li><a href="#">ONLINE CHECK OUT</a></li>
+                  <li><a href="#">MOBILE PAYMENT</a></li>
+                  <li><a href="#">YAPITAL MASTERCARD</a></li>
+                  <li><a href="#">SECURITY</a></li>
+                </ul>
+              </td>
+              <td><code>&lt;ul class="link-list info-menu"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;WHAT’S YAPTITAL&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;ONLINE CHECK OUT&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;MOBILE PAYMENT&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;YAPITAL MASTERCARD&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;SECURITY&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>Top Nav Menu</td>
+              <td><ul class="nav">
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li class="dropdown-nav"><a href="#" class="arrow">ENG</a>
+                  <ul class="sub-nav">
+                    <li><a href="#">DEU</a></li>
+                    <li><a href="#">FR</a></li>
+                  </ul></li>
+                  <li><a href="#">LOG OUT</a></li>
+                </ul></td>
+                <td><code>&lt;ul class="nav"&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;SEARCH&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;SUPPORT&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#" class="arrow"&gt;ENG&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;LOG OUT&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>Text Input</td>
+                  <td><input type="text" placeholder="How much money do you want to fund?" /></td>
+                  <td><code>&lt;input type="text" placeholder="How much money do you want to fund?" /&gt;</code></td>
+                </tr>
+                <tr>
+                  <tr>
+                    <td>Text Input</td>
+                    <td>
+                      <div class="jvFloat">
+                        <span class="placeHolder active">Name</span>
+                        <input type="text" placeholder="Name" class="form-control testBox" />
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Input Error Message</td>
+                    <td>
+                      <div class="error">
+                        <input type="text" />
+                        <label>Another Error</label>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Input Show Password</td>
+                    <td>
+                      <div class="label-tip">
+                        <input type="text" />
+                        <label class="label-tip text-right"><input type="checkbox" id="checkbox">Show Password?</label>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Text Input</td>
+                    <td>
+                      <div class="row collapse">
+                        <div class="twelve">
+                          <div class="eleven mobile-three columns"><input type="text" placeholder="1@kleh.yapital.corp"></div>
+                          <div class="one mobile-one columns"><span class="postfix-action error-icon">&nbsp;</span></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Text Input</td>
+                    <td>
+                      <div class="row collapse left">
+                        <div class="twelve">
+                          <div class="nine mobile-three columns"><input type="text" placeholder="1@kleh.yapital.corp"></div>
+                          <div class="three mobile-one columns"><span class="postfix-action success-icon">&nbsp;</span></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Text Input</td>
+                    <td>
+                      <div class="row collapse left">
+                        <div class="twelve">
+                          <div class="nine mobile-three columns"><input type="text" placeholder="1@kleh.yapital.corp"></div>
+                          <div class="three mobile-one columns"><span class="postfix-action success-icon-green">&nbsp;</span></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Text Input small</td>
+                    <td><input type="text" class="field-small" /></td>
+                    <td><code>&lt;input type="text" class="field-small" /&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Form layout controlled with rows and columns</td>
+                    <td>
+                      <div class="row">
+                        <div class="ten columns"><input type="text" placeholder="ENTER CARD NUMBER" /></div>
+                        <div class="two columns"><input type="text" placeholder="CVV/CVC" /></div>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Help Bubble with information message</td>
+                    <td>
+                      <div class="row">
+                        <div class="columns one"><span class="help-icon">&nbsp;</span></div>
+                        <div class="columns eleven">
+                          <div class="help-bubble">
+                            <div class="corner">&nbsp;</div>
+                            <div class="content">
+                              <p>A BIC is one of the most common forms of bank code used to identify individual banks. your bank will be happy to provide you with IBAN and BIC! Or you choose one of the plenty IBAN and BIC calculators on the world wide web to use.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Pure CSS speech bubble</td>
+                    <td>
+                      <div class="arrow_box">
+                        <p>Please double check your email address.</p>
+                      </div>    
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Pure CSS speech bubble</td>
+                    <td>
+                      <div class="arrow_box requirements">
+                        <p class="pbs"><strong>Password Requirements:</strong></p>
+                        <ul class="no-bullet pbs">
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement checked">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement checked">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                          <li><div class="msg-alert message-requirement">...Your money was sent</div></li>
+                        </ul>
+                      </div>    
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Pure CSS speech bubble error</td>
+                    <td>
+                      <div class="error_box">
+                        <p>At Yapital, twice is nice so your email addresses must be identical.</p>
+                      </div>    
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>General message error</td>
+                    <td>
+                      <div class="row">
+                        <div class="eleven columns centered error-block">
+                          <p>At Yapital, twice is nice so your email addresses must be identical.</p>
+                        </div>
+                      </div>    
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Text Input</td>
+                    <td><input type="text" placeholder="HOW MUCH MONEY DO YOU WANT TO FUND?" /></td>
+                    <td><code>&lt;input type="text" placeholder="HOW MUCH MONEY DO YOU WANT TO FUND?" /&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Custom Dropdown</td>
+                    <td><form class="custom"><select style="display:none;">
+                      <option SELECTED>WHICH SOURCE DO YOU WANT TO USE?</option>
+                      <option>THIS IS ANOTHER OPTION</option>
+                      <option>LOOK, A THIRD OPTION</option>
+                    </select>
+                    <div class="custom dropdown expand">
+                      <a href="#" class="current">WHICH SOURCE DO YOU WANT TO USE?</a>
+                      <a href="#" class="selector"></a>
+                      <ul>
+                        <li>THIS IS A DROPDOWN</li>
+                        <li>THIS IS ANOTHER OPTION</li>
+                        <li>LOOK, A THIRD OPTION</li>
+                      </ul>
+                    </div></form>
+                  </td>
+                  <td><code>&lt;form class="custom"&gt;&lt;select style="display:none;"&gt;
+                    &lt;option SELECTED&gt;WHICH SOURCE DO YOU WANT TO USE?&lt;/option&gt;
+                    &lt;option&gt;THIS IS ANOTHER OPTION&lt;/option&gt;
+                    &lt;option&gt;LOOK, A THIRD OPTION&lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;div class="custom dropdown expand"&gt;
+                    &lt;a href="#" class="current"&gt;WHICH SOURCE DO YOU WANT TO USE?&lt;/a&gt;
+                    &lt;a href="#" class="selector"&gt;&lt;/a&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;THIS IS A DROPDOWN&lt;/li&gt;
+                    &lt;li&gt;THIS IS ANOTHER OPTION&lt;/li&gt;
+                    &lt;li&gt;LOOK, A THIRD OPTION&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/div&gt;&lt;/form&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Textarea</td>
+                    <td><textarea placeholder="DO YOU WANT ADD A TEXTMESSAGE?"></textarea></td>
+                    <td><code>&lt;textarea placeholder="DO YOU WANT ADD A TEXTMESSAGE?" &gt;&lt;/textarea&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Large Textarea</td>
+                    <td><textarea class="large" placeholder="PLEASE ENTER YOUR COMMENTS?"></textarea></td>
+                    <td><code>&lt;textarea class="large" placeholder="PLEASE ENTER YOUR COMMENTS?" &gt;&lt;/textarea&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>Custom Checkboxes</td>
+                    <td>
+                      <form class="custom">
+                        <label for="checkbox1">
+                          <input type="checkbox" id="checkbox1" style="display:none;">
+                          <span class="custom checkbox"></span><span class="custom-label-text">Accept <a href="terms_and_conditions.html" class="link">Terms of use</a></span>
+                        </label>
+                        <label for="checkbox2">
+                          <input type="checkbox" id="checkbox2" checked style="display:none;">
+                          <span class="custom checkbox checked"></span><span class="custom-label-text">Accept <a href="#" class="link">Privacy policy</a></span>
+                        </label>
+                        <label for="checkbox3">
+                          <input type="checkbox" id="checkbox3" style="display:none;">
+                          <span class="custom checkbox checked"></span><span class="custom-label-text">Accept newsletter</span>
+                        </label>
+                      </form>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Custom Checkboxes</td>
+                    <td>
+                      <form class="custom">
+                        <label for="checkbox1">
+                          <input type="checkbox" id="checkbox1" style="display:none;">
+                          <span class="custom checkbox checked"></span><span class="custom-label-text">I accept Yapital`s <a href="#" class="link">Terms and Conditions</a> and <a href="#" class="link">Privacy Policy</a></span>
+                        </label>
+                        <label for="checkbox2">
+                          <input type="checkbox" id="checkbox2" checked style="display:none;">
+                          <span class="custom checkbox"></span><span class="custom-label-text">I`d like to receive the Newsletter.</span>
+                        </label>
+                      </form>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Bubble</td>
+                    <td>
+                      <div class="bubble">
+                        <div class="corner">&nbsp;</div>
+                        <div class="content">
+                          <div><input type="text" class="field-small" /></div>
+                          <div class="text-right"><button class="tiny alert button">SEARCH</button></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <code>&lt;div class="bubble"&gt;
+                        &lt;div class="corner"&gt;&nbsp;&lt;/div&gt;
+                        &lt;div class="content"&gt;
+                        &lt;div&gt;&lt;input type="text" class="field-small" /&gt;&lt;/div&gt;
+                        &lt;div class="text-right"&gt;&lt;button class="tiny alert button"&gt;SEARCH&lt;/button&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;/div&gt;</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Login Bubble</td>
+                      <td><div class="bubble login">
+                        <div class="corner">&nbsp;</div>
+                        <div class="content">
+                          <div><input type="text" class="field-small ajax_loader" placeholder="username" /><label class="error-label">Please enter your username</label></div>
+                          <div><input type="text" class="field-small" placeholder="password" /><label class="error-label">Please enter the password</label></div>
+                          <div class="block-grid">
+                            <button class="tiny alert button right">LOGIN</button>
+                            <a href="#">Password Forgotten?</a><br /><a href="#">Register</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td><code>&lt;div class="bubble login"&gt;
+                      &lt;div class="corner"&gt;&nbsp;&lt;/div&gt;
+                      &lt;div class="content"&gt;
+                      &lt;div&gt;&lt;input type="text" class="field-small ajax_loader" placeholder="username" /&gt;&lt;label class="error-label"&lt;Please enter your username&lt;/label&gt;&lt;/div&gt;
+                      &lt;div&gt;&lt;input type="text" class="field-small" placeholder="password" /&gt;&lt;label class="error-label"&gt;Please enter the password&lt;/label&gt;&lt;/div&gt;
+                      &lt;div class="block-grid"&gt;
+                      &lt;button class="tiny alert button right"&gt;LOGIN&lt;/button&gt;
+                      &lt;a href="#"&gt;Password Forgotten?&lt;/a&gt;&lt;br /&gt;&lt;a href="#"&gt;Register&lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td>Login Bubble with warning message</td>
+                      <td><div class="bubble login">
+                        <div class="corner">&nbsp;</div>
+                        <div class="content">
+                          <div class="warning">Your login name and/or password is not correct. please try again.</div>
+                          <div><input type="text" class="field-small" placeholder="username" /></div>
+                          <div><input type="text" class="field-small" placeholder="password" /></div>
+                          <div class="block-grid">
+                            <button class="tiny alert button right">LOGIN</button>
+                            <a href="#">Password Forgotten?</a><br /><a href="#">Register</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Popup box</td>
+                    <td>
+                      <div class="dialogue-block">
+                        <p>FOR THE VALIDATION OF YOUR FUNDING SOURCE AND YOUR ACCESS TO IT, YOU HAVE TO ENTER YOUR TRANSACTION CODE. PLEASE TAKE A LOOK AT YOUR ACCOUNT STATEMENT AND CHECK FOR AN INCOMING AMOUNT OF &#8364; 0.01 FROM YAPITAL. ENTER THE CODE IN THE BOX BELLOW.</p>
+                        <div class="row">
+                          <div class="left">
+                            <label class="right inline"><strong>CODE:</strong></label>
+                          </div>
+                          <div class="nine columns">
+                            <input type="text" class="two">
+                          </div>
+                        </div>
+                        <div class="text-right mtl">
+                          <a href="index.html" class="button-action cancel_icon inverse">Cancel</a> <a href="#" class="button-action mark_icon mls">OK</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Confirmation Popup box</td>
+                    <td>
+                      <form class="custom">
+                        <div class="dialogue-block">
+                          <h5 class="strong mbm">PLEASE VERIFY YOUR MOBILE NUMBER:</h5>
+                          <div class="row">
+                            <div class="three columns">
+                              <input type="text" placeholder="+49">
+                            </div>
+                            <div class="nine columns">
+                              <input type="text" placeholder="172666622">
+                            </div>
+                          </div>
+                          <p class="mtn">YOU CAN EDIT AND RESEND YOUR MOBILE NUMBER ONLY ONCE. IF YOU STILL HAVE TROUBLE RECEIVING A MESSAGE WITH THE VERIFICATION CODE, PLEASE CALL 00800-927 927 10* OR SEND US AN EMAIL AT <a href="#" class="faq-link">SUPPORT@YAPITAL.COM</a>.</p>
+                          <div class="text-right mtl"><a href="index.html" class="button-action cancel_icon inverse"><strong>CANCEL</strong></a> <a href="#" class="button-action mark_icon mlm"><strong>RESEND</strong></a></div>
+                        </div>
+                      </form>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Custom Popup box
+                    </td>
+                    <td>
+                      <div class="custom-popup-box">
+                        <div class="box-head">
+                          Export Transaction
+                        </div>
+                        <div class="box-content">
+                          <form class="custom">
+                            <div class="row">
+                              <div class="columns six">
+                                <div class="row">
+                                  <div class="five mobile-two columns">
+                                    <label class="inline strong">FROM PAGE:</label>
+                                  </div>
+                                  <div class="seven mobile-two columns">
+                                    <input class="text-right" type="text" placeholder="1" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="columns six">
+                                <div class="row">
+                                  <div class="five mobile-two columns">
+                                    <label class="inline strong right">TO PAGE:</label>
+                                  </div>
+                                  <div class="seven mobile-two columns">
+                                    <input class="text-right" type="text" placeholder="3" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="columns twelve">
+                                <label class="mtm mln" for="customDropdown">SELECT DOCUMENT</label>
+                                <select style="display:none;" id="customDropdown">
+                                  <option SELECTED>SELECT DOCUMENT</option>
+                                  <option>This is another option</option>
+                                  <option>Look, a third option</option>
+                                </select>
+                                <div class="custom dropdown">
+                                  <a href="#" class="current">SELECT DOCUMENT</a>
+                                  <a href="#" class="selector"></a>
+                                  <ul>
+                                    <li>SELECT DOCUMENT</li>
+                                    <li>This is another option</li>
+                                    <li>Look, a third option</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-right mtm">
+                              <a href="#" class="button-action cancel_icon inverse">CLOSE</a> <a href="#" class="button-action arrow_right_icon mlm">EXPORT</a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>  
+                    </td>
+                    <tr />
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Included JS Files -->
+          <script src="javascripts/jquery.min.js"></script>
+          <script src="javascripts/jquery.orbit-1.4.0.js"></script>
+          <script src="javascripts/jquery.customforms.js"></script>
+          <script src="javascripts/jquery.placeholder.min.js"></script>
+          <script src="javascripts/jquery.tooltips.js"></script>
+          <script src="javascripts/app.js"></script>
+          <script src="javascripts/dashboard.js"></script>
+        </body>
+
+        </html>

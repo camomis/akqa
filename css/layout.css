@@ -1,0 +1,58 @@
+.wrapper {
+  width:983px;
+  margin:0 auto;
+}
+
+.header{
+  background:url(../images/header_bg.png) repeat-x;
+}
+
+.cornerL {
+  margin-right:122px;
+  padding:10px 0 19px 63px;
+  background:url(../images/header_borderL.png) no-repeat 0 0;
+}
+
+.cornerR {
+  padding:0px 40px 89px 0;
+  background:url(../images/header_borderR.png) no-repeat right top;
+}
+
+.navigation ul,
+.navigation p{
+  margin:10px 0 0 20px;
+}
+
+.content-container {
+  padding-left: 3px;
+  padding-right: 4px;
+}
+  
+.content-border {
+  background: #E6E8E8;
+  background: -moz-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F2F4F5), 
+              color-stop(10%,#E6E8E8), color-stop(100%,#C7C8D0));
+  background: -webkit-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
+  background: -o-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
+  background: -ms-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
+  background: linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.content-container .content-packbad {
+  background:#fff;
+  border-left: 1px solid #C3C3C3;
+  border-right: 1px solid #C3C3C3;
+}
+
+.product-banner-section {
+  text-align:center;
+  padding:30px 0;
+}
+
+.featured-products {
+  margin:13px 0 14px 50px;
+}
