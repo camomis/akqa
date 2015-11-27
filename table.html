@@ -21,6 +21,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 <style type="text/css">
 .wrapper {
   width: 600px;
@@ -140,6 +141,49 @@ code {
   margin: 20px 0;
 }
 </style>
+<script type="text/javascript">
+function plus_pressed() {
+  var input = $(this).parent().find('input')[0];
+  if (parseInt(input.value) < 10) {
+    input.value = parseInt(input.value) + 1;
+    recalculate();
+  }
+}
+
+function minus_pressed() {
+  var input = $(this).parent().find('input')[0];
+  if (parseInt(input.value) > 0) {
+    input.value = parseInt(input.value) - 1;
+    recalculate();  
+  }
+}
+
+function recalculate() {
+  var subtotal = 0;
+  $('.cost').each(function() {
+    var tr = $(this).parent().parent();
+    var qty = tr.find('input')[0].value;
+    var price = tr.find('.price').html();
+    var cost = price * qty;
+    subtotal = subtotal + cost;
+    $(this).html(cost.toFixed(2));
+  });
+
+  $('.subtotal').html(subtotal.toFixed(2));
+  var vat = subtotal * 0.2;
+  $('.vat').html(vat.toFixed(2));
+  var total_cost = subtotal + vat;
+  $('.total-cost').html(total_cost.toFixed(2));
+
+}
+
+$(function() {
+  $('.plus').click(plus_pressed);
+  $('.minus').click(minus_pressed);
+  recalculate();
+})
+
+</script>
 </head>
 <body>
   <div class="wrapper">
@@ -156,44 +200,51 @@ code {
       <tbody>
         <tr>
           <td>Cotton T-Shirt, Medium</td>
-          <td>&pound;1.99</td>
-          <td>Logo</td>
-          <td>&pound;1.22</td>
+          <td>&pound;<span class="price">1.99</span></td>
+          <td><input type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>        
         <tr>
           <td>Baseball Cap, One Size</td>
-          <td>&pound;2.99</td>
-          <td>Logo</td>
-          <td>&pound;5.98</td>
+          <td>&pound;<span class="price">2.99</span></td>
+          <td><input type="text" value="2"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>        
         <tr>
           <td>Swim Shorts, Medium</td>
-          <td>&pound;3.99</td>
-          <td>Logo</td>
-          <td>&pound;3.99</td>
+          <td>&pound;<span class="price">3.99</span></td>
+          <td><input type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>
         <tr>
           <td>Subtotal</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
-          <td>&pound;11.96</td>
+          <td>&pound;<span class="subtotal">&nbsp;</span></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
           <td>VAT @ 20%</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
-          <td>&pound;2.39</td>
+          <td>&pound;<span class="vat">&nbsp;</span></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
           <td>Total Cost</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
-          <td>&pound;14.35</td>
+          <td>&pound;<span class="total-cost">&nbsp;</span></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td><a href="#" class="button-action">Buy now </a></td>
           <td>&nbsp;</td>
         </tr>
       </tbody>
