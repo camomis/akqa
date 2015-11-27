@@ -177,9 +177,18 @@ function recalculate() {
 
 }
 
+function validate_qty() {
+  if (parseInt($(this).value) != $(this).value) {
+    $(this).value = 0;
+  }
+  recalculate();  
+}
+
+
 $(function() {
   $('.plus').click(plus_pressed);
   $('.minus').click(minus_pressed);
+  $('.qty').keyup(validate_qty);
   recalculate();
 })
 
@@ -201,21 +210,21 @@ $(function() {
         <tr>
           <td>Cotton T-Shirt, Medium</td>
           <td>&pound;<span class="price">1.99</span></td>
-          <td><input type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td><input class="qty" type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
           <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>        
         <tr>
           <td>Baseball Cap, One Size</td>
           <td>&pound;<span class="price">2.99</span></td>
-          <td><input type="text" value="2"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td><input class="qty" type="text" value="2"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
           <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>        
         <tr>
           <td>Swim Shorts, Medium</td>
           <td>&pound;<span class="price">3.99</span></td>
-          <td><input type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
+          <td><input class="qty" type="text" value="1"><a href="#" class="plus">+</a>/<a href="#" class="minus">-</a></td>
           <td>&pound;<span class="cost">&nbsp;</span></td>
           <td><a href="#"><img src="images/basket.png" title="AKQA" alt="AKQA" width="16" height="22" /></a></td>
         </tr>
