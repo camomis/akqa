@@ -1,80 +1,37 @@
-/* Global Reset & Standards ---------------------- */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-/*html,
-body { font-size: 100%; }
-
+/* fonts */
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  color: #000;
-  font-style: normal;
+  font: 12px/1.231 'Droid Serif', serif;
+}
+
+select,input,button,textarea {
+  font:99% 'Droid Serif', serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+pre,code,kbd,samp,tt{
+  font-family:monospace;
+  line-height:100%;
+}
+
+.footer {
+  height: 40px;
+  background: #666666;
+}
+
+.footer-text {
+  border-top: #6b6b6b solid 1px;
+  padding-top: 15px;
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
-  font-family: 'Droid Serif', serif;
-  -webkit-font-smoothing: antialiased; }
+  font-size: 12px;
+  color: #ffffff;
+}
 
-/* Misc ---------------------- */
-.left { float: left; }
-
-.right { float: right; }
-
-.text-left { text-align: left; }
-
-.text-right { text-align: right; }
-
-.text-center { text-align: center; }
-
-.hide { display: none; }
-
-/* Default Link Styles */
-a {
-  color: #;
-  text-decoration: none;
-  line-height: inherit; }
-  a:hover, a:focus {
-    color: #;
-    outline: none }
-  a img, img {
-    border: none; }
-
-/* Default paragraph styles */
-p {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 1.25em;
-  text-rendering: optimizeLegibility; }
-
-  /* Default header styles */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: bold;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  line-height: 1.2125em; }
-
-h1, .h1 {
-  font-size: 30px; }
-
-.button-action {
-  outline: none;
-  display: inline-block;
-  padding-top: 9px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  background-color: #000066;
-  border: none;
-  color: #fff;
-  font-size: 24px;
+.footer-text .droid-bold {
   font-weight: 700;
-  font-family: inherit;
-  line-height: normal;
-  text-align: left;
-  cursor: pointer;
-}*/
-
-.button-action:focus { color: #000066; }
-
+}

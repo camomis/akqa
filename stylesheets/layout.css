@@ -1,17 +1,35 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+.content {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 40px;
+  margin-top: -40px;
+}
+
+html {
+  background: #ffffff;
+}
+
 body {
   background: #ffffff;
   background: -moz-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), 
               color-stop(50%,#ededed), color-stop(100%,#dadada));
-
   background: -webkit-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
   background: -o-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
   background: -ms-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
   background: linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
 }
 
-.wrapper {
+.content {
   width:526px;
   margin:0 auto;
 }
