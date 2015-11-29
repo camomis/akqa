@@ -3,31 +3,6 @@
   margin:0 auto;
 }
 
-.header {
-  background:url(../images/header_bg.png) repeat-x;
-}
-
-.cornerL {
-  margin-right:122px;
-  padding:10px 0 19px 63px;
-  background:url(../images/header_borderL.png) no-repeat 0 0;
-}
-
-.cornerR {
-  padding:0px 40px 89px 0;
-  background:url(../images/header_borderR.png) no-repeat right top;
-}
-
-.navigation ul,
-.navigation p{
-  margin:10px 0 0 20px;
-}
-
-.content-container {
-  padding-left: 3px;
-  padding-right: 4px;
-}
-  
 .content-border {
   background: #E6E8E8;
   background: -moz-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
