@@ -1,33 +1,17 @@
+body {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), 
+              color-stop(50%,#ededed), color-stop(100%,#dadada));
+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
+  background: linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
+}
+
 .wrapper {
   width:526px;
   margin:0 auto;
-}
-
-.content-border {
-  background: #E6E8E8;
-  background: -moz-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F2F4F5), 
-              color-stop(10%,#E6E8E8), color-stop(100%,#C7C8D0));
-  background: -webkit-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
-  background: -o-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
-  background: -ms-linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
-  background: linear-gradient(top, #F2F4F5 0%, #E6E8E8 10%, #C7C8D0 100%);
-
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.content-container .content-packbad {
-  background:#fff;
-  border-left: 1px solid #C3C3C3;
-  border-right: 1px solid #C3C3C3;
-}
-
-.product-banner-section {
-  text-align:center;
-  padding:30px 0;
-}
-
-.featured-products {
-  margin:13px 0 14px 50px;
 }
