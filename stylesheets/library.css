@@ -17,6 +17,20 @@ pre,code,kbd,samp,tt{
   line-height: 100%;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: inherit; 
+}
+
+a:hover, a:focus {
+  color: #000;
+  outline: none 
+}
+  a img, img {
+    border: none; 
+}
+
 .footer {
   height: 40px;
   background: #666666;
@@ -27,11 +41,104 @@ pre,code,kbd,samp,tt{
   border-top: #6b6b6b solid 1px;
   padding-top: 15px;
   font-family: 'Droid Sans', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
 }
 
 .footer-text .droid-bold {
   font-weight: 700;
+}
+
+.button {
+  padding: 1px 10px;
+  display: -moz-inline-box;
+  display: inline-block;
+  background-color: #006;
+  border-radius: 10px;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.53);
+  color: #fff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  border: none;
+  border: 0;
+  /*overflow: hidden;*/
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #33f;
+}
+
+.button[disabled] {
+  background-color: gray;
+  cursor: default;
+}
+
+.basket {
+  display: inline-block;
+  background-image: url(../images/trash.png);
+  width: 16px;
+  height: 22px;
+  z-index: 10;
+}
+
+.basket:hover {
+  background-image: url(../images/trash-hover.png);
+}
+
+.h1, h1 {
+  text-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.text-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.qty {
+  width: 40px;
+  height: 30px;
+  margin-right: 3px;
+  padding-right: 3px;
+  border: 1px solid #999;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  /*line-height: 48px;*/
+  text-align: right;
+  vertical-align: middle;
+}
+
+.plus, .minus {
+  display: block;
+  padding-top: 1px;
+  background-color: #999;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 15px;
+  height: 14px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.minus {
+  margin-top: 2px;
+  /*padding-top: 4px;*/
+}
+
+.plus-minus-buttons {
+  display: inline-block;
+  width: 16px;
+  vertical-align: bottom;
 }

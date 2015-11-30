@@ -18,7 +18,7 @@ html {
   background: #ffffff;
 }
 
-body {
+.wrapper {
   background: #ffffff;
   background: -moz-linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), 
@@ -30,6 +30,6 @@ body {
 }
 
 .content, .footer-text {
-  width:526px;
-  margin:0 auto;
+  width: 526px;
+  margin: 0 auto;
 }
