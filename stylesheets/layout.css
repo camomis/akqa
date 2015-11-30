@@ -29,7 +29,7 @@ body {
   background: linear-gradient(top, #ffffff 0%, #ededed 50%, #dadada 100%);
 }
 
-.content {
+.content, .footer-text {
   width:526px;
   margin:0 auto;
 }
