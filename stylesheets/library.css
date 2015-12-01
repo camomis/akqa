@@ -134,11 +134,32 @@ a:hover, a:focus {
 
 .minus {
   margin-top: 2px;
-  /*padding-top: 4px;*/
 }
 
 .plus-minus-buttons {
   display: inline-block;
   width: 16px;
-  vertical-align: bottom;
+  vertical-align: middle;
+  margin: 9px 0;
+}
+
+.subtotal-text {
+  color: #666;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.total-cost-text {
+  color: black;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.table .trash-column {
+  width: 26px;
+  text-align: right;
+}
+
+.table .button_td {
+  padding-top: 56px;
 }

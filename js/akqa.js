@@ -42,6 +42,9 @@ function validate_qty() {
   var val = $(this).val();
   var intVal = parseInt(val);
 
+  if (isNaN(intVal)) {
+    intVal = 0;
+  }
   if (intVal != val && val) {
     $(this).val(intVal);
   }

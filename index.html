@@ -28,6 +28,75 @@
 <body>
   <div class="wrapper">
     <div class="content">
+      <div class="logo-container"><img src="images/logo.png" title="AKQA" alt="AKQA" width="100" height="48" /></div>
+      <h1 class="h1">Your Basket</h1>
+      <p class="text-description">Items you have added to your basket are shown below.
+Adjust the quantities or remove items before continuing your purchase.</p>
+      <div class="table-div">
+    <form id="basket-form">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Cost</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cotton T-Shirt, Medium</td>
+            <td>&pound;<span class="price">1.99</span></td>
+            <td><input class="qty" type="text" value="1"><span class="plus-minus-buttons"><a href="#" class="plus">+</a><a href="#" class="minus">-</a></span></td>
+            <td>&pound;<span class="cost">&nbsp;</span></td>
+            <td class="trash-column"><a href="#" class="basket"><img src="images/blank.gif" title="trash" alt="trash" width="16" height="22" /></a></td>
+          </tr>        
+          <tr class="odd">
+            <td>Baseball Cap, One Size</td>
+            <td>&pound;<span class="price">2.99</span></td>
+            <td><input class="qty" type="text" value="2"><span class="plus-minus-buttons"><a href="#" class="plus">+</a><a href="#" class="minus">-</a></span></td>
+            <td>&pound;<span class="cost">&nbsp;</span></td>
+            <td class="trash-column"><a href="#" class="basket"><img src="images/blank.gif" title="trash" alt="trash" width="16" height="22" /></a></td>
+          </tr>        
+          <tr>
+            <td>Swim Shorts, Medium</td>
+            <td>&pound;<span class="price">3.99</span></td>
+            <td><input class="qty" type="text" value="1"><span class="plus-minus-buttons"><a href="#" class="plus">+</a><a href="#" class="minus">-</a></span></td>
+            <td>&pound;<span class="cost">&nbsp;</span></td>
+            <td class="trash-column"><a href="#" class="basket"><img src="images/blank.gif" title="trash" alt="trash" width="16" height="22" /></a></td>
+          </tr>
+          <tr class="subtotal-text">
+            <td>Subtotal</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&pound;<span class="subtotal">&nbsp;</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr class="subtotal-text">
+            <td>VAT &copy; 20%</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&pound;<span class="vat">&nbsp;</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr class="total-cost-text">
+            <td>Total Cost</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&pound;<span class="total-cost">&nbsp;</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="2" class="button_td"><button type="submit" class="button">Buy Now »</button></td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
     </div>
     <div class="footer">
       <p class="footer-text">&copy; <span class="droid-bold">2013 AKQA Ltd.</span> Registered in England: 2964394</p>
