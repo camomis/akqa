@@ -35,6 +35,40 @@ html {
 }
 
 .table-div {
+  margin-top: 33px;
   width: 526px;
-  margin: 100px auto 0;
+}
+
+.logo-container {
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.product-column {
+  /*width: 260px;*/
+  padding-left: 20px;
+}
+
+.small-column, .cost-column {
+  /*width: 80px;*/
+  text-align: right;
+}
+
+ .cost-column {
+  padding-right: 20px;
+ }
+
+.table th.product-column,
+.table th.small-column,
+.table th.cost-column {
+  border-bottom: 2px solid #c9c9c9;
+}
+
+.table th {
+  color: black;
+  font-weight: 700;
+}
+.small-column.text-center { 
+  padding-left: 40px;
+  text-align: center; 
 }
